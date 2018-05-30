@@ -1,0 +1,32 @@
+{
+    "name": "aom.cvmaker",
+    "displayName": "cvmaker",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-pdf-generator": "^1.5.4",
+        "cordova-plugin-exitapp": "^1.0.0",
+        "cordova-plugin-printer": "^0.7.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "jspdf": "^1.3.5",
+        "cordova.custom.plugins.exitapp": "https://github.com/gaqzi/cordova-plugin-exitapp"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-pdf-generator": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-printer": {},
+            "cordova.custom.plugins.exitapp": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

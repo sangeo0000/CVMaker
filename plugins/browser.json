@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-pdf-generator": {
+            "PACKAGE_NAME": "aom.cvmaker"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "aom.cvmaker"
+        },
+        "cordova-plugin-printer": {
+            "PACKAGE_NAME": "aom.cvmaker"
+        },
+        "cordova.custom.plugins.exitapp": {
+            "PACKAGE_NAME": "aom.cvmaker"
+        }
+    },
+    "dependent_plugins": {}
+}

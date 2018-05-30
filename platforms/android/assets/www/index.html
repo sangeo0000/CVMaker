@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="./js/datamanip.js"></script>
+        <script src="js/pages.js"></script>
+        <script src="js/closeapp.js"></script>
+    
+        <link href="css/index.css">
+        
+        <meta name="viewport" content="width=100%, initial-scale=0.3,target-densitydpi=device-dpi, user-scalable=no" />   
+    </head>
+    
+    
+    
+    <body style="background-color :darkorange;" onload="onLoad()">
+        
+        
+            <div id="prehome" 
+                 style="background-color: lightgoldenrodyellow;
+                        padding: 50px; 
+                        border: solid;
+                        box-shadow: 10px 10px 5px #888888;
+                        margin: 20px;
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        padding: 20px;
+                        border-radius: 55px;
+            ">
+                
+                <center>
+
+                    
+<br>
+<!---------------------------------------------------------------------------->
+                    <img src="img/person.png" height="210px" width="190px"><br>
+                    <img src="img/cvmakertext.png" height="60px" width="300px">
+<!---------------------------------------------------------------------------->                    
+<br><br><br><br><br><br><br><br>
+<!-------------------------------------button-1------------------------------->
+                    <button onclick="startapp()" 
+                    style="
+                           background-color: darkgreen;
+                           color: white;
+                           padding: 40px;
+                           font-size: 23px;
+                           border-radius: 55px;
+                           
+                    ">
+                        MAKE YOUR CV
+                    </button>
+<!----------------------------------------------------------------------------->
+<br><br><br><br>
+<!-------------------------------------button-2------------------------------->
+                    <button onclick="closeme()" 
+                    style="
+                           background-color: #d10011;
+                           color: white;
+                           padding: 40px;
+                           font-size: 23px;
+                           border-radius: 55px;
+                           
+                    ">
+                        EXIT
+                    </button>
+<!----------------------------------------------------------------------------->
+                    
+                
+<br><br><br><br><br><br><br>
+                </center>
+            </div>
+        
+        
+        
+        
+            <div id="home" style="display: none;background-color: aliceblue;padding: 20px;margin: 20px">
+            <br><br><br>
+                <center><h1 style="font-size: 42px">INPUT YOUR DETAILS</h1></center>
+            <br>
+        
+            <div id="page1">
+            <p style="font-size: 32px">    
+            &nbsp;&nbsp;&nbsp;&nbsp;<u>PERSONAL DETAILS</u>
+            <br>
+            <center>
+                    <input type="text" id="name" placeholder=" Enter Name" style="font-size: 23px;padding: 10px">
+                    <br><br>
+                    <input type="text" id="email" placeholder=" Enter Email" style="font-size: 23px;padding: 10px">
+                    <br><br>
+                    <input type="text" id="mob" placeholder=" Enter mobile number" style="font-size: 23px;padding: 10px">
+                    <br><br>
+                    <input type="text" id="addr" placeholder=" Enter Address" style="font-size: 23px;padding: 10px">
+                    <br><br>
+                    <input type="text" id="DOB" placeholder=" Enter date of Birth" style="font-size: 23px;padding: 10px">
+                    <br><br><br>
+                    <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">NEXT</button>
+            </center>
+            </p>
+            </div>
+        
+        
+        
+        
+                
+                
+                
+                
+                
+        
+            <div id="page2" style="display: none;font-size: 32px;padding: 10px">
+            &nbsp;&nbsp;&nbsp;&nbsp;<u>EDUCATIONAL DETAILS</u>
+            <br><br>
+            <center>
+            SSC
+            <br>
+                <input type="text" id="sscboard" placeholder="Enter BOARD" style="font-size: 23px;padding: 10px">
+                <br>
+                <input type="text" id="sscmarks" placeholder="Enter Marks" style="font-size: 23px;padding: 10px">
+                <br>
+                <input type="text" id="sscyear" placeholder="Enter year" style="font-size: 23px;padding: 10px">
+                <br><br>
+            HSC/DIPLOMA 
+                <br>
+                <input type="text" id="hscfield" placeholder="Enter Field" style="font-size: 23px;padding: 10px">
+                <br>
+                <input type="text" id="hscmarks" placeholder="Enter Marks" style="font-size: 23px;padding: 10px">
+                <br>
+                <input type="text" id="hscyear" placeholder="Enter year" style="font-size: 23px;padding: 10px">
+                <br><br>
+            DEGREE 
+                <br>
+                <input type="text" id="degreefield" placeholder="Enter Field" style="font-size: 23px;padding: 10px"> 
+                <br>
+                <input type="text" id="degreemarks" placeholder="Enter Marks" style="font-size: 23px;padding: 10px">
+                <br>
+                <input type="text" id="degreeyear" placeholder="Enter year" style="font-size: 23px;padding: 10px">
+                <br><br>
+                <button onclick="pageone()" style="font-size: 23px;padding: 10px">BACK</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="pagethree()" style="font-size: 23px;padding: 10px">NEXT</button>
+            </center>
+            </div>
+        
+        
+                
+                
+                
+                
+                
+                
+            
+                
+            <div id="page3" style="display: none ;font-size: 32px;padding: 10px;margin-top: 150px">
+            &nbsp;&nbsp;&nbsp;&nbsp;<u>PERSONAL INFORMATION</u>
+            <br><br>
+            <CENTER >
+                <input type="text" id="hobby" placeholder="Enter your hobbies" style="font-size: 23px;padding: 10px">
+                <br><br>
+                <input type="text" id="languages" placeholder="Languages known" style="font-size: 23px;padding: 10px">
+                <br><br>
+                <input type="text" id="extraact" placeholder="Extra curricular activities" style="font-size: 23px;padding: 10px">
+                <br><br>
+                  <input type="text" id="workexp" placeholder="Work Experience" style="font-size: 23px;padding: 10px">
+                <br><br>
+                <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">BACK</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="templatefun()" style="font-size: 23px;padding: 10px">SUBMIT</button>
+            </CENTER>
+            </div>
+                
+            
+        <!--home div end-->
+        </div>  
+        
+        
+        
+        
+        <div id="endpage" style="display: none;background-color: white;width: 100%;height: device-height;padding-top: 10px">
+            
+                    
+            <div id="temp1" style="padding: 1.5cm;padding-top: 0.5cm;padding-bottom: 0.7cm;">
+                    
+                
+                    
+                    <h1 style="text-align:right; font-size: 20px;margin-bottom: 1px; margin-top: 5px" ><span id="temp1name"></span></h1>
+                    <h4 style="text-align: right;margin-top: 1px">Curriculam Vitae</h4>
+                
+                    <h2 style="margin-bottom: 1px;color: black"><u>Personal Details</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                    <h4 style="margin-top: 2px;margin-bottom: 2px">DOB : <span id="temp1DOB"></span></h4>
+                    <h4 style="margin-top: 2px;margin-bottom: 2px">Address : <span id="temp1addr"></span></h4>
+                    <h4 style="margin-top: 2px;margin-bottom: 2px">Email : <span id="temp1email"></span></h4>
+                    <h4 style="margin-top: 2px;margin-bottom: 2px">Mobile : <span id="temp1mobile"></span></h4>
+                
+                
+                
+                <br>
+                <h2 style="margin-bottom: 1px;color:black"><u>CV Highlights</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                
+                <ul>
+                <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms.</li>
+                    
+                <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li>
+                </ul>
+            
+                
+                
+                <br>
+                <h2 style="margin-bottom: 1px;color: black"><u>Professional Experience</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                
+                <span id="PE"></span>
+                
+                
+                
+                
+                <br><br>
+                <h2 style="margin-bottom: 1px;color: black"><u>Educational Qualifications</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                
+                <style>
+                    table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    }
+                    th,td{
+                        padding: 2px;
+                    }
+                </style>
+                
+                
+                <table style="width: 50%;margin-top: 25px">
+                    <tr>
+                        <th>Board</th>
+                        <th>Percentage / Grades</th>
+                        <th>Year</th>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td colspan="3" style="text-align: center">SSC</td>
+                    </tr>
+                    <tr>
+                        <td id="temp1sscboard">sah</td>
+                        <td id="temp1sscmarks">aa</td>
+                        <td id="temp1sscyear">aa</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td colspan="3" style="text-align: center">HSC/DIPLOMA</td>
+                    </tr>
+                    <tr>
+                        <td id="temp1hscboard">san</td>
+                        <td id="temp1hscmarks">aa</td>
+                        <td id="temp1hscyear">aa</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td colspan="3" style="text-align: center">DEGREE</td>
+                    </tr>
+                    <tr>
+                        <td id="temp1degreeboard">san</td>
+                        <td id="temp1degreemarks">aa</td>
+                        <td id="temp1degreeyear">aa</td>
+                    </tr>
+                    
+                </table>
+                
+                
+                <br><br>
+                <h2 style="margin-bottom: 1px;color: black"><u>Personal Information:</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                
+                <ul>
+                    <li>A young, determined hard and smart working person. I believe in task based roles and complete ownership of work.</li>
+                    <li>Languages Known:<span id="temp1languages"></span></li>
+                    <li>Hobbies:<span id="temp1hobby"></span></li>
+                    <li>Extra curricular activities:<span id="temp1extraact"></span></li> 
+                </ul>
+                
+                <h2 style="margin-bottom: 1px;color: black"><u>Declaration</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
+                <p>
+                I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>      
+            </div>
+            
+<!--
+            <center>
+                <button onclick="takeScreenShot()" style="font-size: 23px;padding: 10px">pdf</button>
+            </center>
+-->     
+            
+        </div>
+        
+    </body>
+</html>
