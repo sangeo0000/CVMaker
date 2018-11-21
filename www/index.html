@@ -1,15 +1,8 @@
 <html>
     <head>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script src="./js/datamanip.js"></script>
-        <script src="js/pages.js"></script>
-        <script src="js/closeapp.js"></script>
-    
-        <link href="css/index.css">
+       <link href="css/index.css">
         
-        <meta name="viewport" content="width=100%, initial-scale=0.3,target-densitydpi=device-dpi, user-scalable=no" />
-        
+        <meta name="viewport" content="width=100%, initial-scale=0.3,target-densitydpi=device-dpi, user-scalable=no" />   
     </head>
     
     
@@ -94,7 +87,7 @@
                     <br><br>
                     <input type="text" id="DOB" placeholder=" Enter date of Birth" style="font-size: 23px;padding: 10px">
                     <br><br><br>
-                    <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">NEXT</button>
+                    <button onclick="templatefun()" style="font-size: 23px;padding: 10px">NEXT</button>
             </center>
             </p>
             </div>
@@ -161,6 +154,8 @@
                 <br><br>
                 <input type="text" id="extraact" placeholder="Extra curricular activities" style="font-size: 23px;padding: 10px">
                 <br><br>
+                  <input type="text" id="workexp" placeholder="Work Experience" style="font-size: 23px;padding: 10px">
+                <br><br>
                 <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">BACK</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <button onclick="templatefun()" style="font-size: 23px;padding: 10px">SUBMIT</button>
@@ -206,7 +201,7 @@
                 <br>
                 <h2 style="margin-bottom: 1px;color: black"><u>Professional Experience</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
                 
-                <span id="PE">FRESHER</span>
+                <span id="PE"></span>
                 
                 
                 
@@ -288,5 +283,12 @@
             
         </div>
         
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="./js/datamanip.js"></script>
+        <script src="js/pages.js"></script>
+        <script src="js/closeapp.js"></script>
+        
     </body>
+       
 </html>
