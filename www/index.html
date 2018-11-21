@@ -87,7 +87,7 @@
                     <br><br>
                     <input type="text" id="DOB" placeholder=" Enter date of Birth" style="font-size: 23px;padding: 10px">
                     <br><br><br>
-                    <button onclick="templatefun()" style="font-size: 23px;padding: 10px">NEXT</button>
+                    <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">NEXT</button>
             </center>
             </p>
             </div>
@@ -142,20 +142,20 @@
                 
                 
                 
-            
-                
+               
             <div id="page3" style="display: none ;font-size: 32px;padding: 10px;margin-top: 150px">
             &nbsp;&nbsp;&nbsp;&nbsp;<u>PERSONAL INFORMATION</u>
             <br><br>
-            <CENTER >
-                <input type="text" id="hobby" placeholder="Enter your hobbies" style="font-size: 23px;padding: 10px">
+            <CENTER>
+                <input type="text" id="hobbyfield" placeholder="Enter your hobbies" style="font-size: 23px;padding: 10px">
                 <br><br>
-                <input type="text" id="languages" placeholder="Languages known" style="font-size: 23px;padding: 10px">
+                <input type="text" id="langfield" placeholder="Languages known" style="font-size: 23px;padding: 10px">
                 <br><br>
-                <input type="text" id="extraact" placeholder="Extra curricular activities" style="font-size: 23px;padding: 10px">
+                <input type="text" id="exactfield" placeholder="Extra curricular activities" style="font-size: 23px;padding: 10px">
                 <br><br>
-                  <input type="text" id="workexp" placeholder="Work Experience" style="font-size: 23px;padding: 10px">
+                  <input type="text" id="workexpfield" placeholder="Work Experience" style="font-size: 23px;padding: 10px">
                 <br><br>
+                
                 <button onclick="pagetwo()" style="font-size: 23px;padding: 10px">BACK</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <button onclick="templatefun()" style="font-size: 23px;padding: 10px">SUBMIT</button>
@@ -170,13 +170,8 @@
         
         
         <div id="endpage" style="display: none;background-color: white;width: 100%;height: device-height;padding-top: 10px">
-            
-                    
             <div id="temp1" style="padding: 1.5cm;padding-top: 0.5cm;padding-bottom: 0.7cm;">
-                    
-                
-                    
-                    <h1 style="text-align:right; font-size: 20px;margin-bottom: 1px; margin-top: 5px" ><span id="temp1name"></span></h1>
+              <h1 style="text-align:right; font-size: 50px;margin-bottom: 1px; margin-top: 5px" ><span id="temp1name"></span></h1>
                     <h4 style="text-align: right;margin-top: 1px">Curriculam Vitae</h4>
                 
                     <h2 style="margin-bottom: 1px;color: black"><u>Personal Details</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
@@ -198,14 +193,6 @@
             
                 
                 
-                <br>
-                <h2 style="margin-bottom: 1px;color: black"><u>Professional Experience</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
-                
-                <span id="PE"></span>
-                
-                
-                
-                
                 <br><br>
                 <h2 style="margin-bottom: 1px;color: black"><u>Educational Qualifications</u><hr style="margin-top: 1px" size=5 noshade color=black></h2>
                 
@@ -222,6 +209,7 @@
                 
                 <table style="width: 50%;margin-top: 25px">
                     <tr>
+                        <th>Qualification</th>
                         <th>Board</th>
                         <th>Percentage / Grades</th>
                         <th>Year</th>
@@ -229,32 +217,26 @@
                     
                     
                     <tr>
-                        <td colspan="3" style="text-align: center">SSC</td>
-                    </tr>
-                    <tr>
-                        <td id="temp1sscboard">sah</td>
-                        <td id="temp1sscmarks">aa</td>
-                        <td id="temp1sscyear">aa</td>
+                        <td>SSC</td>        
+                        <td id="temp1sscboard">Maharashtra State</td>
+                        <td id="temp1sscmarks">50</td>
+                        <td id="temp1sscyear">2013</td>
                     </tr>
                     
                     
                     <tr>
-                        <td colspan="3" style="text-align: center">HSC/DIPLOMA</td>
-                    </tr>
-                    <tr>
-                        <td id="temp1hscboard">san</td>
-                        <td id="temp1hscmarks">aa</td>
-                        <td id="temp1hscyear">aa</td>
+                        <td>HSC/DIPLOMA</td>
+                        <td id="temp1hscboard">Maharashtra State</td>
+                        <td id="temp1hscmarks">50</td>
+                        <td id="temp1hscyear">2015</td>
                     </tr>
                     
                     
                     <tr>
-                        <td colspan="3" style="text-align: center">DEGREE</td>
-                    </tr>
-                    <tr>
-                        <td id="temp1degreeboard">san</td>
-                        <td id="temp1degreemarks">aa</td>
-                        <td id="temp1degreeyear">aa</td>
+                        <td>DEGREE</td>
+                        <td id="temp1degreeboard">SPPU</td>
+                        <td id="temp1degreemarks">50</td>
+                        <td id="temp1degreeyear">2019</td>
                     </tr>
                     
                 </table>
@@ -274,13 +256,6 @@
                 <p>
                 I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.</p>      
             </div>
-            
-<!--
-            <center>
-                <button onclick="takeScreenShot()" style="font-size: 23px;padding: 10px">pdf</button>
-            </center>
--->     
-            
         </div>
         
         <script type="text/javascript" src="cordova.js"></script>

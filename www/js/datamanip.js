@@ -1,6 +1,5 @@
 var name,datobirth,address,phone,mailid;
 var sscboard,sscmarks,hscfield,hscmarks,degreefield,degreemarks,sscyear,hscyear,degreeyear;
-var domain,company,expyrs,workexp;
 var hobby,exactivity,lang;
 
 function storedata(){
@@ -19,10 +18,9 @@ hscyear = document.getElementById("hscyear").value;
 degreefield = document.getElementById("degreefield").value;
 degreemarks = document.getElementById("degreemarks").value;
 degreeyear = document.getElementById("degreeyear").value;
-workexp=docuetment.getElementById("workexp").value;
-hobby = document.getElementById("hobby").value;
-exactivity = document.getElementById("extraact").value;
-lang = document.getElementById("languages").value;
+hobby = document.getElementById("hobbyfield").value;
+exactivity = document.getElementById("exactfield").value;
+lang = document.getElementById("langfield").value;
 }
 
 function printdata(){
@@ -31,7 +29,6 @@ function printdata(){
     document.getElementById("temp1DOB").innerHTML=datobirth;
     document.getElementById("temp1email").innerHTML=mailid;
     document.getElementById("temp1mobile").innerHTML=phone;
-    document.getElementById("PE").innerHTML=workexp;
     
     document.getElementById("temp1sscboard").innerHTML=sscboard;
     document.getElementById("temp1sscmarks").innerHTML=sscmarks;
